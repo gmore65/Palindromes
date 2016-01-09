@@ -1,0 +1,22 @@
+<script>
+function palindrome(str) {
+  // Good luck!
+  function upperCase(match){
+    return match.toLowerCase();
+  }
+
+  str = str.replace(/[^a-z0-9]/gmi, "").replace(/[A-Z]/gi, upperCase);
+  var newStr = str.split('').reverse().join("");
+  console.log(newStr);
+  if (str === newStr){
+    document.write("true");
+  }
+  else
+    document.write("false");
+
+}
+
+
+
+palindrome("race car dog");
+</script>
