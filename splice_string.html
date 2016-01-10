@@ -1,0 +1,21 @@
+<script>
+function truncate(str, num) {
+  // Clear out that junk in your trunk
+  var x = str.length - 3;
+  if (num <= 3){
+    str = str.slice(0, num) + "...";
+    return str;
+  }
+    else if (x > num){
+   str = str.slice(0, num - 3) + "...";
+    console.log(x);
+    return str;
+  }
+  else
+    
+  return str;
+}
+
+truncate("Peter Piper picked a peck of pickled peppers", 14);
+
+</script>
